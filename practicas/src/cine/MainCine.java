@@ -15,8 +15,18 @@ public class MainCine {
 
 		Ticket avengers=new Ticket(sala1.getNum(),sala1.numeroButaca(),"Avenger",10,250);
 		
+		Pelicula peli=new Pelicula("Avengers");
+		Pelicula peli2=new Pelicula("Dron");
+		Pelicula peli3=new Pelicula("Spiderman");
 		
-		JOptionPane.showMessageDialog(null,avengers.getHoraDeCompra());
+		Cine c1=new Cine("Palermo");
+		
+		c1.agregarPelicula(peli);
+		c1.agregarPelicula(peli2);
+		c1.agregarPelicula(peli3);
+		JOptionPane.showMessageDialog(null,c1.litarPeliculas());
+		c1.eliminarPelicula(peli3);
+		JOptionPane.showMessageDialog(null,c1.litarPeliculas());
 	}
 
 }

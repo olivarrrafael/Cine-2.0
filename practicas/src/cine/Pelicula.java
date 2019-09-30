@@ -8,12 +8,10 @@ public class Pelicula {
 	private String genero;
 	
 	
-	public Pelicula(String nombre,String protagonista,int fechaEstreno,String genero) {
+	public Pelicula(String nombre) {
 		
 		this.nombre=nombre;
-		this.protagonista=protagonista;
-		this.fechaEstreno=fechaEstreno;
-		this.genero=genero;
+		genero="";
 	}
 
 
@@ -54,6 +52,24 @@ public class Pelicula {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pelicula other = (Pelicula) obj;
+		if (nombre == null) {
+			if (other.nombre != null)
+				return false;
+		} else if (!nombre.equals(other.nombre))
+			return false;
+		return true;
 	}
 
 
