@@ -1,9 +1,10 @@
 package cine;
 
-public class Butaca {
+public abstract class Butaca {
 	private int fila;
 	private int num;
-	private String estado;
+	private String estado; //L:Libre, O:Ocupado, X:Pasillo.
+	protected boolean luz;
 	
 	public Butaca(int fila, int num) {
 		this.fila = fila;
@@ -56,6 +57,10 @@ public class Butaca {
 	public void pasillo() {
 		estado = "X";
 	}
+	
+	public void encender() {
+		luz = true;
+	};
 	
 	@Override
 	public String toString() {

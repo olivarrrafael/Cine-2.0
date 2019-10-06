@@ -1,6 +1,6 @@
 package cine;
 
-public class Sala {
+public class Sala implements ISala4d {
 	private int num;
 	private int pasillo; // columna del pasillo
 	private Butaca[][] butacas;
@@ -66,6 +66,12 @@ public class Sala {
 			}
 		}
 			return srt;
+	}
+
+	@Override
+	public void asignarSector4D(int butacaSupIzqFila, int butacaSupIzqCol, int butacaInfDerFila, int butacaInfDerCol) {
+	
+		
 	}
 		
 		
