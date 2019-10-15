@@ -19,8 +19,6 @@ public class Arena {
 		
 		System.out.println(j1.getTablero());
 		
-		System.out.println(j1.getTablero().get(4));
-		
 		
 		System.out.println("Player 2 in the next step choose your numers from 1 to 9");
 		
@@ -49,15 +47,18 @@ public class Arena {
 
 		if(longitud2<longitud1) {
 			
-			System.out.println("El ganador es el jugador 1 "+ j1.getNombre());
+			System.out.println("The winner is player 1 "+ j1.getNombre());}
 			
-			if (longitud1<longitud2) {
+			else if (longitud1<longitud2) {
 				
-				System.out.println("El ganador es el jugador 1 "+ j1.getNombre());
+				System.out.println("The winner is player 1 "+ j1.getNombre());
 			}
 			
-			else 
-				System.out.println("Es un empate");
+			else {
+				
+				System.out.println("Draw");
+				
+			}
 		}
 		
 		
@@ -65,4 +66,4 @@ public class Arena {
 	}
 
 
-}
+
