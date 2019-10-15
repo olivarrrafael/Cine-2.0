@@ -20,7 +20,7 @@ public class Sala implements ISala4d {
 					butacas[i][j].pasillo();
 			}
 		}
-	}
+	} 
 	
 	public String toString() {
 		String str = "";
