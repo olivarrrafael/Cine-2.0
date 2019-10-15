@@ -13,14 +13,14 @@ public class Arena {
 		Jugadores j2=new Jugadores(24,"Fatima");
 		int cont=0;
 		
-		System.out.println("Player 1 in the next step choose your numers from 1 to 9");
+		System.out.println("Player 1 in the next step choose your numbers from 1 to 9");
 		
 		j1.inicializarTablero();
 		
 		System.out.println(j1.getTablero());
 		
 		
-		System.out.println("Player 2 in the next step choose your numers from 1 to 9");
+		System.out.println("Player 2 in the next step choose your numbers from 1 to 9");
 		
 		j2.inicializarTablero();
 		
@@ -51,7 +51,7 @@ public class Arena {
 			
 			else if (longitud1<longitud2) {
 				
-				System.out.println("The winner is player 1 "+ j1.getNombre());
+				System.out.println("The winner is player 2 "+ j2.getNombre());
 			}
 			
 			else {
